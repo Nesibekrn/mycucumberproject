@@ -12,10 +12,10 @@ Feature: Scenario_outline
 
 
     Examples: test_data
-      |item|
-      |mercedes benz|
-      |tesla   |
-      |sdet  |
+      |item                    |
+      |mercedes benz           |
+      |tesla                   |
+      |sdet                    |
       |QA Automation Engineer  |
-      |bmw     |
-      |selenium webdriver jobs|
+      |bmw                     |
+      |selenium webdriver jobs |

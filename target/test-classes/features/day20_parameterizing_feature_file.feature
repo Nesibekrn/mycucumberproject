@@ -5,9 +5,9 @@ Feature: Google_Search
     Given user opens the URL "https://www.google.com"
 
   Scenario: TC01_mercedes_search
-    Given user search for "mercedes" on the google
-    Then verify the page title contains "mercedes"
-    Then close the application
+  Rule user search for "mercedes" on the google
+  Rule verify the page title contains "mercedes"
+    Rule close the application
 
   Scenario: TC02_tesla_search
     Given user search for "tesla" on the google

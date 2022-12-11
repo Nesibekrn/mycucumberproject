@@ -16,7 +16,8 @@ public class DBUtils {
     private static Connection connection;
     //    statement : used to write queries
     private static Statement statement;
-    //    resultSet : used to perform DB actions such as going to specific rows, get data as string, get data as object
+    //    resultSet : used to perform DB actions such as going to specific rows,
+    //    get data as string, get data as object
     private static ResultSet resultSet;
     /**
      * DBUtils.createConnection(); -> to connect to teh database

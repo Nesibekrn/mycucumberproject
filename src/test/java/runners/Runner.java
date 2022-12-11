@@ -13,12 +13,12 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/cucumber.json",
                 "junit:target/xml-reports/cucumber.xml",
                 "rerun:target/failedRerun.txt",
-                "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
+                //"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         },
-               features = "./src/test/resources/features",
+        features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"},
-        tags = "@reservation_creation",
-        dryRun = false
+        tags = "@scenario_outline1",
+        dryRun = true
 )
 public class Runner {
 }

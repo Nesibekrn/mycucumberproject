@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         },
         features = "./src/test/resources/features/db_features",
         glue = {"stepdefinitions"},
-        tags = "@verify_account_types_SA",
+        tags = "@db_read",
         dryRun = false
 
 )

@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Smoke Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Oct 6, 2022 06:21:10 PM</span></a>
+<a href="#"><span class="badge badge-primary">Oct 12, 2022 11:49:37 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Oct 6, 2022 06:21:10 PM</h3>
+<h3>Oct 12, 2022 11:49:37 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Oct 6, 2022 06:21:48 PM</h3>
+<h3>Oct 12, 2022 11:50:23 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,7 +143,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>6</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>32</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"data_tables":32.626
+"Medunna_Test":43.692
 };
 </script>
 <div class="row">
@@ -172,8 +172,8 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@data_tables</td>
-<td>1</td>
+<td>@US16_Room_Manipulation</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -213,7 +213,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 6,
+passGrandChild: 32,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
@@ -238,7 +238,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@data_tables</a>
+<a class="dropdown-item" href="#">@US16_Room_Manipulation</a>
 </ul>
 </li>
 </ul>
@@ -249,9 +249,9 @@ eventsCount: 5,
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">data_tables</p>
+            <p class="name">Medunna_Test</p>
             <p class="text-sm">
-              <span>6:21:14 PM</span> / <span>00:00:32:626</span>
+              <span>11:49:39 AM</span> / <span>00:00:43:692</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -259,10 +259,10 @@ eventsCount: 5,
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">data_tables</h5>
-<span class='badge badge-success'>10.06.2022 6:21:14 PM</span>
-<span class='badge badge-danger'>10.06.2022 6:21:47 PM</span>
-<span class='badge badge-default'>00:00:32:626</span>
+<h5 class="test-status text-pass">Medunna_Test</h5>
+<span class='badge badge-success'>10.12.2022 11:49:39 AM</span>
+<span class='badge badge-danger'>10.12.2022 11:50:22 AM</span>
+<span class='badge badge-default'>00:00:43:692</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -274,44 +274,179 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>customer_login</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>US16_Room_Manipulation</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.user_opens_the_url(java.lang.String)">
-                <span>Given user opens the URL "https://www.bluerentalcars.com/"</span>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>US16_Room_Manipulation</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given user opens the URL "https://medunna.com"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppLoginStepDefs.user_navigate_the_login_page()">
-                <span>When user navigate the login page</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then verify the page title contains "MEDUNNA"</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppLoginStepDefs.user_enters_manager_username_and_manager_password(io.cucumber.datatable.DataTable)">
-                <span>And user enters manager_username and manager_password</span>
-      <div><table class='markup-table table '><tr><td>username</td><td>password</td></tr><tr><td>customer@bluerentalcars.com</td><td>12345</td></tr></table>
-      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then capture the screenshot</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.AppLoginStepDefs.verify_the_login_is_successful()">
-                <span>Then verify the login is successful</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Given Sign in as admin</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.ReusableStepDefs.capture_the_screenshot()">
-                <span>And capture the screenshot</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on ItemsTitles</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.GoogleStepDefs.close_the_application()">
-                <span>Then close the application</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Room button</span>
       <div>
       </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click Create a new room button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that Create or edit a Room is displayed</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter room number as "99754"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Clear room number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify This field is required.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Enter room number as "99754"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify 5 Room Types are selectable.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on Status checkbox</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that checkbox is selected</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Send price to price box  as "123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When clear the price</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify This field is required.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Send price to price box  as "123"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Send description to the description box and clear.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify This field is required is not displayed.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Send description to the description box</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on View button on Rooms page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify that you can view all 6 items.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on Edit button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Change the room number</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on save button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify "The room is updated"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Click on Created Date button and sort them from newest to oldest</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Delete button at the top.</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Click on Delete as confirm on the alert</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Verify The room is deleted</span>
+      <div>
+      </div>
+                  </div>
               </div>
-          </div>
+            </div>
         </div>
   </div>
 </div>
@@ -337,15 +472,15 @@ eventsCount: 5,
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
-<p class="name">@data_tables</p>
-<p class="duration text-sm">1 tests</p>
+<p class="name">@US16_Room_Manipulation</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@data_tables</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@US16_Room_Manipulation</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -358,11 +493,21 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>18:21:14 PM</td>
+<td>11:49:39 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>customer_login</a>
+<a href="#" class="linked" test-id='1' id='2'>US16_Room_Manipulation</a>
 <div class="">
-<span class="badge badge-default">data_tables.customer_login</span>
+<span class="badge badge-default">Medunna_Test.US16_Room_Manipulation</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>11:49:39 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>US16_Room_Manipulation</a>
+<div class="">
+<span class="badge badge-default">Medunna_Test.US16_Room_Manipulation</span>
 </div>
 </td>
 </tr>
